@@ -1,0 +1,1 @@
+Realizar un Tic tac toe en 3 dimensiones y pensar en estrategias para GANAR, EMPATAR pero no se puede PERDER
