@@ -34,7 +34,7 @@ Desde sus raíces en la década de 1950, la IA ha evolucionado de manera notable
 
 Este capítulo proporciona una panorámica histórica de la IA, destacando a figuras influyentes como Alan Turing, quien propuso el famoso "Test de Turing" como una medida de inteligencia en máquinas. John McCarthy, por otro lado, fue quien acuñó el término "Inteligencia Artificial" y fundó el campo en el famoso taller de Dartmouth en 1956.
 
-Además, el capítulo subraya las metas fundamentales de la IA, que incluyen la capacidad de percepción para entender el mundo circundante, el razonamiento para tomar decisiones fundamentadas y el aprendizaje para mejorar el desempeño con la experiencia. Estas metas reflejan la ambición de dotar a las máquinas con habilidades que se asemejen a las capacidades humanas.
+Además, subraya las metas fundamentales de la IA, que incluyen la capacidad de percepción para entender el mundo circundante, el razonamiento para tomar decisiones fundamentadas y el aprendizaje para mejorar el desempeño con la experiencia. Estas metas reflejan la ambición de dotar a las máquinas con habilidades que se asemejen a las capacidades humanas.
 
 No obstante, la IA no está exenta de desafíos cruciales. La incertidumbre es una piedra angular, ya que los entornos del mundo real suelen ser complejos y ambiguos. Los autores también señalan la importancia de abordar cuestiones éticas y sociales que surgen con el avance de la IA, como la responsabilidad de las decisiones tomadas por agentes autónomos y la garantía de que la tecnología beneficie a la sociedad en su conjunto.
 
@@ -46,10 +46,41 @@ El Capítulo 2, titulado "Agentes Inteligentes", sumerge al lector en el núcleo
 
 Un elemento crucial en la construcción de un agente es la representación del conocimiento. Los autores exploran diversas formas de codificar la información que guía las decisiones de un agente, desde sistemas basados en reglas hasta modelos probabilísticos como las redes Bayesianas. La elección de la representación adecuada es esencial para que el agente tome decisiones óptimas en su entorno.
 
-El capítulo destaca la importancia de la racionalidad limitada. Los agentes no siempre tienen recursos ilimitados y deben tomar decisiones con información y tiempo limitados. Esto introduce el concepto de "heurísticas", que son atajos de decisión que pueden ser subóptimos pero prácticos en situaciones de la vida real.
+Se destaca la importancia de la racionalidad limitada. Los agentes no siempre tienen recursos ilimitados y deben tomar decisiones con información y tiempo limitados. Esto introduce el concepto de "heurísticas", que son atajos de decisión que pueden ser subóptimos pero prácticos en situaciones de la vida real.
 
 Los autores también exploran arquitecturas de agentes, que determinan cómo el agente procesa la información y toma decisiones. Sistemas basados en reglas, que siguen un conjunto de instrucciones predefinidas, y sistemas basados en objetivos, que persiguen metas definidas, son ejemplos fundamentales. Cada enfoque tiene sus ventajas y desventajas, y la elección de la arquitectura adecuada depende del problema y del entorno en el que opera el agente.
 
-El capítulo aborda el tema crucial de la incertidumbre en la toma de decisiones. Los entornos reales a menudo presentan incertidumbre y ambigüedad. Los autores presentan técnicas para lidiar con esta incertidumbre, como la teoría de la probabilidad y la lógica difusa, que permiten a los agentes tomar decisiones informadas incluso en entornos inciertos.
+Se aborda el tema crucial de la incertidumbre en la toma de decisiones. Los entornos reales a menudo presentan incertidumbre y ambigüedad. Los autores presentan técnicas para lidiar con esta incertidumbre, como la teoría de la probabilidad y la lógica difusa, que permiten a los agentes tomar decisiones informadas incluso en entornos inciertos.
 
 La sección final del capítulo introduce el concepto de aprendizaje, que es esencial para que los agentes se adapten a entornos cambiantes y desconocidos. Los agentes pueden aprender a partir de la experiencia, lo que les permite mejorar su desempeño con el tiempo.
+
+### Capitulo 26: Aprendizaje de Reforzamiento
+
+El Capítulo 26 se adentra en un paradigma crucial de la Inteligencia Artificial: cómo los agentes pueden aprender a través de la interacción con su entorno. A diferencia del aprendizaje supervisado, en el que se proporciona un conjunto de datos etiquetados, en el aprendizaje de refuerzo, el agente debe aprender a través de ensayo y error, tomando decisiones y recibiendo señales de recompensa o penalización.
+
+El capítulo introduce el concepto central del Proceso de Decisión de Markov (MDP), que proporciona un marco matemático para modelar la interacción agente-entorno en entornos estocásticos. Un MDP describe cómo el estado del entorno y las acciones del agente evolucionan a lo largo del tiempo, y cómo estas transiciones están asociadas con recompensas.
+
+La función de valor es una herramienta fundamental en el aprendizaje de refuerzo, ya que evalúa la calidad de una política, es decir, una estrategia para tomar decisiones. Los autores explican cómo se puede utilizar la función de valor para determinar qué tan buena es una política en términos de recompensas esperadas.
+
+El capítulo presenta técnicas de aprendizaje de refuerzo, incluyendo la programación dinámica, que es una estrategia para calcular funciones de valor óptimas en MDPs pequeños y discretos. También se exploran métodos de Monte Carlo, que permiten estimar la función de valor a partir de la experiencia de interacción con el entorno.
+
+Un aspecto crucial en el aprendizaje de refuerzo es el balance entre exploración y explotación. El agente debe elegir entre acciones conocidas (explotación) y acciones desconocidas que podrían llevar a nuevas recompensas (exploración). Los autores discuten estrategias para abordar este dilema, como el uso de políticas epsilon-greedy que equilibran la exploración y la explotación.
+
+El capítulo también aborda temas más avanzados, como el aprendizaje basado en diferencias temporales (TD learning) y los métodos de aproximación de función, que permiten escalar el aprendizaje de refuerzo a entornos más complejos y de mayor dimensión.
+
+### Capítulo 27: Aprendizaje Supervisado
+
+El Capítulo 27, se centra en uno de los paradigmas fundamentales de la Inteligencia Artificial: el aprendizaje a partir de datos etiquetados. En este enfoque, un agente recibe un conjunto de ejemplos de entrada y salida, y debe aprender una función que mapea las entradas a las salidas deseadas.
+
+Comienza explorando algoritmos de clasificación, que implican asignar una etiqueta a un conjunto de características. Se presentan métodos como los árboles de decisión, que dividen el espacio de características en regiones para clasificar los datos, y las máquinas de vectores de soporte, que encuentran el hiperplano que mejor separa las clases.
+
+Además de la clasificación, se abordan técnicas de regresión, que implican predecir valores numéricos a partir de características. Algoritmos como la regresión lineal y los vecinos más cercanos se presentan como herramientas poderosas para estimar relaciones entre variables.
+
+Un aspecto crítico del aprendizaje supervisado es la evaluación del rendimiento del modelo. Los autores introducen métricas como la precisión, el error cuadrático medio y la curva ROC, que permiten medir qué tan bien el modelo generaliza a nuevos datos.
+
+El concepto de sobreajuste (overfitting) es fundamental en el aprendizaje supervisado. Los modelos pueden memorizar los datos de entrenamiento en lugar de aprender patrones generales, lo que lleva a un rendimiento deficiente en nuevos datos. Se presentan estrategias para mitigar el sobreajuste, como la validación cruzada y la selección de modelos.
+
+También destaca la importancia de la interpretación de modelos. Comprender cómo y por qué un modelo toma decisiones es crucial en aplicaciones críticas como la medicina y el derecho. Los autores abordan técnicas de interpretación, como la importancia de características y la visualización de modelos.
+
+El aprendizaje supervisado no se limita a algoritmos clásicos. El capítulo introduce el emocionante campo del aprendizaje profundo (deep learning), que utiliza redes neuronales para aprender representaciones complejas de los datos. Las redes neuronales profundas han demostrado un rendimiento sobresaliente en tareas como la visión por computadora y el procesamiento del lenguaje natural.
+
