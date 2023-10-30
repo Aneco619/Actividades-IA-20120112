@@ -2,6 +2,11 @@
 
 Indicaciones: 
 
+Los hombres se han denominado a sí mismos como Homo sapiens (hom-bre sabio) porque nuestras capacidades mentales son muy importantes paranosotros. Durante miles de años, hemos tratado de entender cómo pensamos;1
+es decir, entender cómo un sim- ple puñado de materia puede percibir, enten-der, predecir y manipular un mundo mu- cho más grande y complicado queella misma. El campo de la inteligencia artificial, o IA, va más allá: no sólointenta comprender, sino que también se esfuerza en cons- truir entidadesinteligentes.
+
+Dado el texto anterior, se requiere hacer lo siguiente.
+
 * Redactar un ensayo de minimo 2000 palabras, del capitulos 1, 2, 26 y 27 del apartado A del libro, inteligencia artificial un enfoque moderno.
 
 * Redactar un ensayo del Documental sobre IA minimo 3000 palabras.
