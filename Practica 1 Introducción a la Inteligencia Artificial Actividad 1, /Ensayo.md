@@ -54,7 +54,7 @@ Se aborda el tema crucial de la incertidumbre en la toma de decisiones. Los ento
 
 La sección final del capítulo introduce el concepto de aprendizaje, que es esencial para que los agentes se adapten a entornos cambiantes y desconocidos. Los agentes pueden aprender a partir de la experiencia, lo que les permite mejorar su desempeño con el tiempo.
 
-### Capitulo 26: Aprendizaje de Reforzamiento
+#### Capitulo 26: Aprendizaje de Reforzamiento
 
 El Capítulo 26 se adentra en un paradigma crucial de la Inteligencia Artificial: cómo los agentes pueden aprender a través de la interacción con su entorno. A diferencia del aprendizaje supervisado, en el que se proporciona un conjunto de datos etiquetados, en el aprendizaje de refuerzo, el agente debe aprender a través de ensayo y error, tomando decisiones y recibiendo señales de recompensa o penalización.
 
@@ -68,7 +68,7 @@ Un aspecto crucial en el aprendizaje de refuerzo es el balance entre exploració
 
 El capítulo también aborda temas más avanzados, como el aprendizaje basado en diferencias temporales (TD learning) y los métodos de aproximación de función, que permiten escalar el aprendizaje de refuerzo a entornos más complejos y de mayor dimensión.
 
-### Capítulo 27: Aprendizaje Supervisado
+#### Capítulo 27: Aprendizaje Supervisado
 
 El Capítulo 27, se centra en uno de los paradigmas fundamentales de la Inteligencia Artificial: el aprendizaje a partir de datos etiquetados. En este enfoque, un agente recibe un conjunto de ejemplos de entrada y salida, y debe aprender una función que mapea las entradas a las salidas deseadas.
 
