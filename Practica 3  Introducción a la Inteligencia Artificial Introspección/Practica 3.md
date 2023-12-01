@@ -354,3 +354,11 @@ El alfil negro que se encuentra en la segunda columna y cuarto renglon o penulti
 | . | . | . | . |
 | N | . | . | . |
 | . | N | N | N | 18
+
+Como podemos ver nos queda un pieza que no llego satisfactoriamente a su posicion, ya que como recordamos los alfiles en el ajedrez solo avanzan en forma de diagonal por lo que se necesitaria de mas espacios en el tablero para suponer que si se puede cumplir, en este caso yo no pude y asi fue como lo haria
+
+
+
+## Conclusion
+
+El ajedrez, con sus movimientos precisos y estrategias refinadas, es un campo donde convergen la ciencia y el arte. La disposición final de los alfiles, resultado de una coreografía estratégica, es un testimonio de la riqueza que este juego aporta a aquellos que se sumergen en su complejidad. Cada partida es una sinfonía única, y este intercambio de alfiles destaca la capacidad del ajedrez para cautivar y desafiar a jugadores y espectadores por igual. En última instancia, el tablero de ajedrez se convierte en un lienzo donde se pintan historias tácticas, y los alfiles, en sus movimientos aparentemente simples, contribuyen a la grandiosa narrativa de este juego atemporal.
