@@ -40,7 +40,7 @@ $ log2(41) = 5 $
 
 $ 2^5 =32 $
 
-$ f(41)=2(41-32)+1=2*9+1=19 $
+$f(41)=2(41-32)+1=2*9+1=19$
 
 Por lo tanto, Josephus se sentó en la posición 19 para garantizar su supervivencia. Este enfoque se puede generalizar para cualquier número de soldados $ n $
 
@@ -69,6 +69,8 @@ public class Josephus {
 }
 
 ```
+![Resultado del codigo](resultcodigo.png)
+
 El metodo encontrarPosicionJosephus
 
 Toma un entero $n$ como parámetro, que representa el número de soldados.
