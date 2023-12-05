@@ -22,27 +22,27 @@ El problema de josephus llega a ser fascinante e intrigante por lo que su soluci
 
 Supongamos que tenemos un numero $n$ de soldados y queremos encontrar la posicion segura para josephus. La solucion puede ser obtenida utilizando una formula recursiva.
 
-Si $n$ es una potencia de 2 (es decir, $ n=2^m $), entonces Josephus se sienta en la posicion 1. Esto porque como se mencionó, el primer soldado (El que se encuentra en la posicion 1) siempre sobrevive cuando $n$ es una potencia de 2
+Si $n$ es una potencia de 2 (es decir, $n=2^m$), entonces Josephus se sienta en la posicion 1. Esto porque como se mencionó, el primer soldado (El que se encuentra en la posicion 1) siempre sobrevive cuando $n$ es una potencia de 2
 
-Si $n$ no es una potencia de 2, podemos escribir $n$ como $ n=2^m+l $, donde l es la cantidad de soldados adicionales despues de la ultima potencia de 2. En este caso , Josephus se sienta en la posicion 2l+1. En terminos generales la formula seria:
+Si $n$ no es una potencia de 2, podemos escribir $n$ como $n=2^m+l$, donde l es la cantidad de soldados adicionales despues de la ultima potencia de 2. En este caso , Josephus se sienta en la posicion 2l+1. En terminos generales la formula seria:
 
- $ f(n)=2 (n-2^(log2(n))+1 $
+ $f(n)=2 (n-2^(log2(n))+1$
 
-donde $ log2(n) $ representa la parte entera del logaritmo en base 2 de $ n $
+donde $log2(n)$ representa la parte entera del logaritmo en base 2 de $n$
 
 Así que, aplicando esto al caso de 41 soldados, obtenemos:
 
-$ f(41) = 2 (41-2^(log(41))+1) $
+$f(41) = 2 (41-2^(log(41))+1)$
 
 Calculando los valores: 
 
-$ log2(41) = 5 $
+$log2(41) = 5$
 
-$ 2^5 =32 $
+$2^5 =32$
 
 $f(41)=2(41-32)+1=2*9+1=19$
 
-Por lo tanto, Josephus se sentó en la posición 19 para garantizar su supervivencia. Este enfoque se puede generalizar para cualquier número de soldados $ n $
+Por lo tanto, Josephus se sentó en la posición 19 para garantizar su supervivencia. Este enfoque se puede generalizar para cualquier número de soldados $n$
 
 Ahora para programar el ejemplo seria de la siguiente manera:
 
@@ -77,7 +77,7 @@ Toma un entero $n$ como parámetro, que representa el número de soldados.
 
 Verifica si $n$ es una potencia de 2 utilizando la expresión (n & (n - 1)) == 0. Si es así, devuelve 1 porque, en este caso, Josephus se sentaría en la posición 1. 
 
-Si $n$ no es una potencia de 2, calcula la posición de Josephus utilizando la fórmula $ 2*(n-2^(log(n))+1)$ y despues devuelve la posicion calculada.
+Si $n$ no es una potencia de 2, calcula la posición de Josephus utilizando la fórmula $2*(n-2^(log(n))+1$ y despues devuelve la posicion calculada.
 
 El metodo main 
 
