@@ -5,9 +5,9 @@ import imutils
 from mtcnn.mtcnn import MTCNN
 
 
-Fotos = 'Aneco_sin_cubrebocas'
+Fotos = 'Andres_Cubrebocas'
 direccion = '/Users/aneco/Documents/Instituto Tecnologico De Morelia/8vo Semestre/Inteligencia Artificial/Git Proyects/Proyectos Finales/2.Cubrebocas/Fotos'
-carpeta = direccion + '/' + 'NoSiCubrebocas'
+carpeta = direccion + '/' + 'SiCubrebocas'
 
 if not os.path.exists(carpeta):
     print('Carpeta creada: ', carpeta)
