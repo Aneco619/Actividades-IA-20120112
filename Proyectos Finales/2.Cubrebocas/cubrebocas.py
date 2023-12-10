@@ -7,7 +7,7 @@ from mtcnn.mtcnn import MTCNN
 
 Fotos = 'Aneco_sin_cubrebocas'
 direccion = '/Users/aneco/Documents/Instituto Tecnologico De Morelia/8vo Semestre/Inteligencia Artificial/Git Proyects/Proyectos Finales/2.Cubrebocas/Fotos'
-carpeta = direccion + '/' + 'NoCubrebocas'
+carpeta = direccion + '/' + 'NoSiCubrebocas'
 
 if not os.path.exists(carpeta):
     print('Carpeta creada: ', carpeta)
