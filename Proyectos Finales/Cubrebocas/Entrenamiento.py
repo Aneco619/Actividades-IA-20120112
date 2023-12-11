@@ -2,7 +2,7 @@ import cv2
 import os
 import numpy as np
 
-direccion = '/Users/aneco/Documents/Instituto Tecnologico De Morelia/8vo Semestre/Inteligencia Artificial/Git Proyects/Proyectos Finales/2.Cubrebocas/Fotos'
+direccion = '/Users/aneco/Documents/Instituto Tecnologico De Morelia/8vo Semestre/Inteligencia Artificial/Git Proyects/Proyectos Finales/Cubrebocas/Fotos'
 lista = os.listdir(direccion)
 
 etiquetas = []
