@@ -10,13 +10,29 @@ rostros = []
 con = 0
 
 for nameDir in lista:
-    nombre = direccion + '/' + nameDir
+    nombre = os.path.join(direccion, nameDir)
 
-    for fileName in os.listdir(nombre):
-        etiquetas.append(con)
-        rostros.append(cv2.imread(nombre + '/' + fileName,0))
+    if os.path.isdir(nombre):
+        for fileName in os.listdir(nombre):
+            filePath = os.path.join(nombre, fileName)
 
-    con = con + 1
+            # Verificar si es un archivo de imagen
+            if fileName.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp')):
+                # Leer la imagen en escala de grises
+                imagen = cv2.imread(filePath, 0)
+
+                # Verificar si la lectura de la imagen fue exitosa
+                if imagen is not None:
+                    etiquetas.append(con)
+                    rostros.append(imagen)
+                else:
+                    print(f"Error al leer la imagen: {filePath}")
+            else:
+                print(f"Archivo no válido: {filePath}")
+
+        con += 1
+    else:
+        print(f"{nombre} no es un directorio.")
 
 reconocimiento = cv2.face.LBPHFaceRecognizer_create()
 

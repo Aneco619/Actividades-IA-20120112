@@ -6,7 +6,7 @@ from mtcnn.mtcnn import MTCNN
 
 
 Fotos = 'Andres_Cubrebocas'
-direccion = '/Users/aneco/Documents/Instituto Tecnologico De Morelia/8vo Semestre/Inteligencia Artificial/Git Proyects/Proyectos Finales/2.Cubrebocas/Fotos'
+direccion = '/Users/aneco/Documents/Instituto Tecnologico De Morelia/8vo Semestre/Inteligencia Artificial/Git Proyects/Proyectos Finales/Cubrebocas/Fotos'
 carpeta = direccion + '/' + 'SiCubrebocas'
 
 if not os.path.exists(carpeta):

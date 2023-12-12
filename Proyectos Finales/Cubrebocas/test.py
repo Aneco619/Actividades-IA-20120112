@@ -6,8 +6,8 @@ mp_face_detection = mp.solutions.face_detection
 
 LABELS = ["Con_cubrebocas","Sin_cubrebocas"]
 
-face_mask = cv2. face. LBPHFaceRecognizer_create()
-face_mask.read("")
+face_mask = cv2.face.LBPHFaceRecognizer_create()
+face_mask.read("cascade.xml")
 
 
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
