@@ -119,3 +119,55 @@ Los tres caníbales deseaban ayudar a los misioneros a cruzar el río, pero su b
 ¿Cómo puede resolverse el problema, sin que en ningún momento haya más caníbales que misioneros en cualquier orilla del río? recuerda que un misionero y un caníbal en una orilla del río más uno o dos caníbales en el bote al mismo lado, significa que los misioneros tendrán problemas.
 
 ![Misioneros](misioneros.png)
+
+Como podemos analizar tenemos que pasar tanto monjes como canibales al otro lado
+
+![](1.png)
+
+Como primer paso ponemos un monje y un canibal en la lancha y los llevamos al otro lado
+
+![](2.png)
+
+Como segundo paso dejamos al canibal y regresamos al monje
+
+![](3.png)
+
+Como tercero paso subimos a 2 monjes
+
+![](4.png)
+
+Como cuarto paso dejamos a un canibal al otro lado
+
+![](5.png)
+
+Como quinto paso regresamos a un canibal
+
+![](6.png)
+
+Como sexto paso cargamos a 2 monjes al otro lado
+
+![](7.png)
+
+Como septimo paso dejamos a un monje al otro lado y cargamos a un canibal y un monje al extremo derecho
+
+![](8.png)
+
+Como octavo paso dejamos a un canibal y cargamos a un monje a la lancha
+
+![](9.png)
+
+Como noveno paso dejamos 3 monjes en la esquina izquierda y nos regresamos con un canibal en la lancha
+
+![](10.png)
+
+Como decimo paso cargamos a 2 canibales en la lancha y llevamos al otro extremo
+
+![](11.png)
+
+Como onceavo paso dejamos a un solo canibal y regresamos al otro 
+
+![](12.png)
+
+Como doceavo paso cargamos a los 2 monjes al otro extremos y vemos que ya todos pueden estar en el otro lado de la isla
+
+![](13.png)
