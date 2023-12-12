@@ -7,7 +7,7 @@ from mtcnn.mtcnn import MTCNN
 
 Fotos = 'Andres_Cubrebocas'
 direccion = '/Users/aneco/Documents/Instituto Tecnologico De Morelia/8vo Semestre/Inteligencia Artificial/Git Proyects/Proyectos Finales/Cubrebocas/Fotos'
-carpeta = direccion + '/' + 'SiCubrebocas'
+carpeta = direccion + '/' + 'Andres_Cubrebocas'
 
 if not os.path.exists(carpeta):
     print('Carpeta creada: ', carpeta)
@@ -27,7 +27,7 @@ while True:
     for i in range (len(caras)):
         x1, y1, ancho, alto = caras [i]['box']
         x2, y2 = x1 + ancho, y1 + alto
-        cara_reg = frame[y1:y2, x1:x2]
+        cara_reg = gris[y1:y2, x1:x2]
         cara_reg = cv2.resize(cara_reg, (150,200), interpolation = cv2.INTER_CUBIC)
         cv2.imwrite(carpeta +"/rostro_{}.jpg".format(count), cara_reg)
         count = count + 1
