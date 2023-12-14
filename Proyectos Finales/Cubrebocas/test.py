@@ -10,7 +10,7 @@ face_mask = cv2.face.LBPHFaceRecognizer_create()
 face_mask.read("cascade.xml")
 
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0)
 
 with mp_face_detection.FaceDetection(
     min_detection_confidence=0.5) as face_detection:
@@ -19,18 +19,32 @@ with mp_face_detection.FaceDetection(
         ret, frame = cap.read()
         if ret == False: break
         
-        heigth, width, _ = frame.shape
+        height, width, _ = frame.shape
         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = face_detection.process(frame_rgb)
 
         if results.detections is not None:
             for detection in results.detections:
                 xmin = int(detection.location_data.relative_bounding_box.xmin * width)
-                ymin = int(detection.location_data.relative_bounding_box.ymin * heigth)
+                ymin = int(detection.location_data.relative_bounding_box.ymin * height)
                 w = int(detection.location_data.relative_bounding_box.width * width)
-                h = int(detection.location_data.relative_bounding_box.heigth * heigth)
+                h = int(detection.location_data.relative_bounding_box.height * height)
+                if xmin < 0 or ymin < 0 or h < 0 or w < 0:
+                    continue
+                
+                # cv2.rectangle(frame, (xmin,ymin),(xmin + h, ymin + h), (0, 255, 0), 5)
 
-                cv2.rectangle(frame, (xmin,ymin),(xmin + h, ymin + h), (0, 255, 0), 5)
+                face_image = frame [ymin : ymin + h, xmin : xmin + w]
+                face_image = cv2.cvtColor(face_image, cv2.COLOR_BGR2GRAY)
+                face_image = cv2.resize(face_image,(72,72), interpolation=cv2.INTER_CUBIC)
+
+                result = face_mask.predict(face_image)
+                cv2.putText(frame, "{}".format(result),(xmin, ymin - 5), 1, 1.3, (210, 124, 176), 1, cv2.LINE_AA)
+
+                if result[1] < 150:
+                    color= (0,255,0) if LABELS[result[0]] == "Con_cubrebocas" else (0,0,255)
+                    cv2.putText(frame,"{}".format(LABELS[result[0]]), (xmin,ymin - 25),2,1,color,1,cv2.LINE_AA)
+                    cv2.rectangle(frame,(xmin,ymin),(xmin+w,ymin+h),color,2)
 
         cv2.imshow("Frame", frame)
         k= cv2.waitKey(1)
